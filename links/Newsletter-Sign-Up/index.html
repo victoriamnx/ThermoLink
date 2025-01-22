@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="components/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>
+      Contact Us
+    </title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="left">
+        <h1>Contact Us!</h1>
+        <p>Get in touch with our team for inquiries and support:</p>
+        <div class="updates">
+          <div>
+            <img class="list" src="components/images/icon-list.svg" alt="" />
+            <p>Product inquiries and requests</p>
+          </div>
+          <div>
+            <img class="list" src="components/images/icon-list.svg" alt="" />
+            <p>Technical support and troubleshooting</p>
+          </div>
+          <div>
+            <img class="list" src="components/images/icon-list.svg" alt="" />
+            <p>And much more!</p>
+          </div>
+        </div>
+        <div id="formulario">
+          <form>
+            <label for="email">Email address<br /></label>
+            <input
+              type="email"
+              id="email-input"
+              placeholder=" email@company.com"
+              oninput="validateEmail()"
+            />
+            <span id="email-error-message" style="display: none">
+              Valid email required
+            </span>
+            <button id="notify-button" onclick="exibirModal()" disabled>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    
+      <div id="right">
+        <img src="components/images/illustration-sign-up-desktop.svg" alt="" />
+      </div>
+    
+      <!-- Success message start -->
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <img src="components/images/icon-success.svg" alt="" />
+          <h1>Thanks for reaching out!</h1>
+          <p>
+            A confirmation email has been sent to
+            <strong>@loremcompany.com.</strong> Please open it and click the
+            button inside to confirm your submission.
+          </p>
+          <button>Dismiss message</button>
+        </div>
+      </div>
+    
+      <script src="index.js"></script>
+      <!-- Success message end -->
+    </div>
+    
+
+
+  </body>
+</html>

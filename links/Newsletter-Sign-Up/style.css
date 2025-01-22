@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --error-color: #62ff57;
+  --text-color: hsl(106, 29.40%, 20.00%);
+  --background-color: hsl(98, 18.20%, 25.90%);
+  --input-color: hsl(231, 7%, 60%);
+  --container-background: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
+  background-color: var(--background-color);
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 32px;
+  padding: 24px;
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+  background-color: var(--container-background);
+}
+
+#left {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 32px;
+  padding: 30px 60px 30px 30px;
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+  background-color: var(--container-background);
+}
+
+h1 {
+  font-size: 58px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.updates {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.updates div {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+.list {
+  width: 20px;
+  height: 20px;
+  margin: 0px 10px 0px 0px;
+}
+
+#formulario {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+}
+
+input {
+  width: 100%;
+  padding: 15px 15px;
+  outline: none;
+  border-radius: 8px;
+  border: 1px solid hsla(231, 7%, 60%, 0.678);
+  margin-top: 8px;
+}
+
+::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--input-color);
+  font-family: "Roboto", sans-serif;
+  margin-top: 6px;
+}
+
+form {
+  width: 100%;
+}
+
+#email-error-message {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--error-color);
+  font-family: "Roboto", sans-serif;
+  margin-top: 6px;
+}
+
+button {
+  width: 100%;
+  border: 0px;
+  display: block;
+  text-align: center;
+  padding: 15px 30px;
+  border-radius: 8px;
+  margin-top: 14px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  background-size: 200% auto;
+  background-image: linear-gradient(
+    45deg,
+    #62ff57 0%,
+rgb(49, 107, 33) 51%,
+    #62ff57 100%
+  );
+  box-shadow: 0px 0px 14px -7px #f09819;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.modal-content img {
+  margin-bottom: 20px;
+}
+
+.modal {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--background-color);
+  z-index: 1;
+}
+
+.modal-content {
+  width: 400px;
+  height: auto;
+  padding: 30px;
+  margin: 15% auto;
+  text-align: flex-start;
+  border-radius: 20px;
+  background-color: #fefefe;
+  border: none;
+}
+
+.modal-content p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+  margin-top: 10px;
+}
+
+.attribution a {
+  color: hsl(0, 0%, 59%);
+  text-decoration: none;
+}
+
+a:visited {
+  color: hsl(0, 0%, 59%);
+  text-decoration: none;
+}
+
+a:hover {
+  color: hsl(223, 87%, 63%);
+  text-decoration: underline;
+}
