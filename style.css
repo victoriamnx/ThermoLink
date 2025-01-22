@@ -138,7 +138,7 @@ header nav a:hover {
 .section p {
   margin-bottom: 1rem;
   font-size: 1rem;
-  color: #555;
+  color: #555555;
   text-align: center;
 }
 
@@ -167,8 +167,17 @@ header nav a:hover {
   width: 100%;
   max-width: 300px;
   aspect-ratio: 1 / 1;
-  background: #c4c4c4;
+  background: #bed2bc;
   border-radius: 8px;
+}
+
+.buttons {
+  display: flex;
+  gap: 30px;
+  margin: 30px;
+  align-items: center;
+  justify-content: center;
+
 }
 
 #joinbtn {
