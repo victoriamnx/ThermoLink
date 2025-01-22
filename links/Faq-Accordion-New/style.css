@@ -38,9 +38,7 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background: url(./assets/images/background-pattern-desktop.png), #f8eeff;
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background:  #c5f598;
   font-family: "Work Sans", sans-serif;
 }
 
@@ -61,7 +59,7 @@ body {
 h1 {
   display: flex;
   gap: 1.5rem;
-  color: var(--Dark-Purple, #301534);
+  color: var(--Dark-Purple, #213b08);
   font-family: "Work Sans", sans-serif;
   font-size: 3.5rem;
   font-style: normal;
@@ -74,7 +72,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--Dark-Purple, #301534);
+  color: var(--Dark-Purple, #213b08);
   font-family: "Work Sans", sans-serif;
   font-size: 1.125rem;
   font-style: normal;
@@ -84,7 +82,7 @@ h2 {
 }
 
 p {
-  color: var(--Pale-Purple, #8b6990);
+  color: var(--Pale-Purple, #698e46);
   font-family: "Work Sans", sans-serif;
   font-size: 1rem;
   font-style: normal;
@@ -104,7 +102,7 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
-  border-top: 1px solid #f8eeff;
+  border-top: 1px solid #c5f598;
 }
 
 .menu-btn {
@@ -131,7 +129,7 @@ p {
 
 .drop_container.show {
   display: block;
-  color: var(--Pale-Purple, #8b6990);
+  color: var(--Pale-Purple, #698e46);
   font-family: "Work Sans", sans-serif;
   font-size: 1rem;
   font-style: normal;
@@ -149,7 +147,7 @@ p {
 }
 
 .menu-btn:hover {
-  color: #ad28eb;
+  color: #82df2b;
 }
 
 .attribution {
@@ -159,16 +157,10 @@ p {
 }
 
 .attribution a:hover {
-  color: #ad28eb;
+  color: #82df2b;
 }
 
 @media only screen and (max-width: 768px) {
-  body {
-    background: url(./assets/images/background-pattern-mobile.svg), #f8eeff;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    font-family: "Work Sans", sans-serif;
-  }
 
   .mainDiv {
     width: 20.43rem;

@@ -17,7 +17,7 @@ body {
   height: 100%;
   font-family: "League Spartan", sans-serif;
   font-weight: 500;
-  color: hsl(300, 43%, 22%);
+  color: #213b08;
   background-color: hsl(0, 0%, 100%);
 }
 
@@ -54,7 +54,7 @@ body {
   font-size: 50px;
   font-weight: 900;
   font-family: "League Spartan", sans-serif;
-  color: hsl(300, 43%, 22%);
+  color: #213b08;
   margin-bottom: 20px;
 }
 
@@ -62,7 +62,7 @@ body {
   font-size: 15px;
   font-weight: 500;
   font-family: "League Spartan", sans-serif;
-  color: hsl(303, 10%, 53%);
+  color: rgb(131, 147, 123);
   line-height: 20px;
   margin-bottom: 10px;
 }
@@ -121,7 +121,7 @@ body {
   font-size: 15px;
   font-weight: 700;
   font-family: "League Spartan", sans-serif;
-  color: hsl(300, 43%, 22%);
+  color: #213b08;
   margin-left: 20px;
 }
 
@@ -150,7 +150,7 @@ body {
   margin-top: 10px;
   margin-right: 20px;
   color: hsl(0, 0%, 100%);
-  background-color: hsl(300, 43%, 22%);
+  background-color: #213b08;
   padding: 30px;
   border-radius: 10px;
 }
@@ -169,7 +169,7 @@ body {
   margin-top: 30px;
   margin-right: 20px;
   color: hsl(0, 0%, 100%);
-  background-color: hsl(300, 43%, 22%);
+  background-color: #213b08;
   padding: 30px;
   border-radius: 10px;
 }
@@ -188,7 +188,7 @@ body {
   margin-top: 50px;
   margin-right: 20px;
   color: hsl(0, 0%, 100%);
-  background-color: hsl(300, 43%, 22%);
+  background-color: #213b08;
   padding: 30px;
   border-radius: 10px;
 }
@@ -211,7 +211,7 @@ body {
   font-size: 15px;
   font-weight: 400;
   font-family: "League Spartan", sans-serif;
-  color: hsl(333, 80%, 67%);
+  color: hsl(105, 79.80%, 67.10%);
 }
 
 .reviews p {
@@ -231,7 +231,7 @@ body {
 }
 
 .attribution a {
-  color: hsl(300, 43%, 22%);
+  color: #213b08;
 }
 
 a:link {
@@ -239,7 +239,7 @@ a:link {
 }
 
 a:visited {
-  color: hsl(300, 43%, 22%);
+  color: #213b08;
   text-decoration: none;
 }
 
