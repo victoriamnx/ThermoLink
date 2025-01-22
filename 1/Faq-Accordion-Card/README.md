@@ -4,6 +4,8 @@ This is a solution to the [Faq Accordion Card challenge](https://www.frontendmen
 
 # Table of contents
 
+- [Frontend Mentor - Faq Accordion Card](#frontend-mentor---faq-accordion-card)
+- [Table of contents](#table-of-contents)
 - [Result](#result)
 - [Links](#links)
 - [Built with](#built-with)

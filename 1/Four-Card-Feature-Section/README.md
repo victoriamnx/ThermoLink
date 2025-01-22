@@ -4,6 +4,8 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 # Table of contents
 
+- [Frontend Mentor - Four card feature section solution](#frontend-mentor---four-card-feature-section-solution)
+- [Table of contents](#table-of-contents)
 - [Result](#result)
 - [Links](#links)
 - [Built with](#built-with)

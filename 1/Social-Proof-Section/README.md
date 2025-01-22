@@ -4,6 +4,7 @@ This is a solution to the [https://www.frontendmentor.io/challenges/social-proof
 
 # Table of contents
 
+- [Table of contents](#table-of-contents)
 - [Result](#result)
 - [Links](#links)
 - [Built with](#built-with)

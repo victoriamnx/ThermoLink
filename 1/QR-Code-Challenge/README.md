@@ -4,7 +4,9 @@ This is a solution to the [QR code component challenge](https://www.frontendment
 
 # Table of contents
 
-- [Result](#Result)
+- [Frontend Mentor - QR code component solution](#frontend-mentor---qr-code-component-solution)
+- [Table of contents](#table-of-contents)
+- [Result](#result)
 - [Links](#links)
 - [Built with](#built-with)
 - [Useful resources](#useful-resources)
