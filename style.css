@@ -1,74 +1,74 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Importação de fontes */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+/* Reset e configurações gerais */
 html {
   box-sizing: border-box;
-  font-family: "Poppins", serif;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0;
-  background: url(./bg-header.png);
-  background-position: center;
-  background-size: cover;
+  background: url(./components/images/bg-header.png) no-repeat center center /
+    cover;
 }
 
+/* Estilos do header */
 header {
   background: transparent;
-  color: #000;
-  padding: 2rem 2rem;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 115px 0px 115px;
+  padding: 50px 150px 0px 150px;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
 header nav a {
-  margin: 0 1rem;
   text-decoration: none;
   color: #fff;
-  text-shadow: 7px 23px 7px rgba(32, 76, 35, 0),
-    4px 15px 6px rgba(32, 76, 35, 0.01), 2px 8px 5px rgba(32, 76, 35, 0.05),
-    1px 4px 4px rgba(32, 76, 35, 0.09), 0px 1px 2px rgba(32, 76, 35, 0.1);
-  font-family: "Poppins", serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
 header nav a:hover {
+  color: #80b940;
   text-decoration: underline;
 }
 
 .button {
-  padding: 15px 30px;
-  text-align: center;
+  padding: 0.8rem 1.5rem;
   text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;
-  border-radius: 10px;
-  display: block;
-  border: 0px;
+  background: linear-gradient(45deg, #80b940, #28733a);
+  color: #fff;
+  border-radius: 8px;
+  border: none;
   font-weight: 700;
-  box-shadow: 0px 0px 14px -7px #28733a;
-  background-image: linear-gradient(
-    45deg,
-    #80b940 0%,
-    #28733a 51%,
-    #80b940 100%
-  );
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  transition: background 0.3s, transform 0.2s;
+  text-decoration: none;
 }
 
 .button:hover {
-  background-position: right center;
-  /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
+  background: linear-gradient(45deg, #28733a, #80b940);
 }
 
 .button:active {
@@ -78,94 +78,176 @@ header nav a:hover {
 .hero {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  background: transparent;
-  padding: 50px 115px 0px 115px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 150px 80px 150px;
+  text-align: left;
 }
 
 .hero h1 {
-  margin: 0.5rem 0;
-  color: #000;
-  font-size: 84px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  margin: 1rem 0;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .hero p {
-  color: #000;
-  font-family: "Poppins", serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.button2 {
+  padding: 0.8rem 1.5rem;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #80b940, #28733a);
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+.button2:hover {
+  background: linear-gradient(45deg, #28733a, #80b940);
+}
+
+.button2:active {
+  transform: scale(0.95);
 }
 
 .section {
-  display: flex;
-  flex-direction: column;
-  margin: 2rem auto;
-  background: linear-gradient(0deg, #efeff0 0%, #efeff0 100%);
-  padding: 0px 115px 0px 115px;
-}
-
-.s1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.s2 {
-  display: flex;
-  justify-content: center;
+  padding: 2rem 0;
+  background: #efeff0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .section h2 {
   margin-bottom: 1rem;
+  font-size: 1.8rem;
   color: #333;
+  text-align: center;
 }
 
 .section p {
   margin-bottom: 1rem;
+  font-size: 1rem;
   color: #555;
-}
-
-.cta {
   text-align: center;
-  background: #333;
-  color: #000;
-  padding: 0px 115px 0px 115px;
 }
 
-.cta a {
-  display: inline-block;
-  background: #ff6600;
-  color: #000;
-  padding: 0.5rem 1.5rem;
+.s1,
+.s3,
+.s4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.s2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.s2 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1 / 1;
+  background: #c4c4c4;
+  border-radius: 8px;
+}
+
+#joinbtn {
+  appearance: none;
+  background-color: #fff;
+  border-radius: 15px;
+  color: #7bb540;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  padding: 16px 24px;
+  text-align: center;
   text-decoration: none;
-  border-radius: 4px;
-  margin-top: 1rem;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  width: 434px;
 }
 
-.cta a:hover {
-  background: #e65c00;
+#joinbtn:disabled {
+  pointer-events: none;
+}
+
+#joinbtn:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+#joinbtn:active {
+  box-shadow: none;
+  transform: translateY(0);
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 1rem;
-  background: #333;
-  color: #000;
+  gap: 10px;
+  background: linear-gradient(90deg, #7bb540 0.07%, #2f783a 122.35%);
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.5;
 }
 
+/* Ajuste para garantir uma boa responsividade em telas menores */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
-    text-align: center;
+    padding: 30px; /* Diminuir o padding para telas menores */
   }
 
   header nav {
-    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 2rem 1rem; /* Reduzir padding */
+  }
+
+  .hero h1 {
+    font-size: 2.5rem; /* Fontes menores para telas pequenas */
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .s2 {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .s2 div {
+    max-width: 100%; /* Remover se não for necessário */
+    width: 100%; /* Certificar que ocupe toda a largura */
+  }
+
+  #joinbtn {
+    width: auto; /* Ajustar o tamanho do botão para não ocupar toda a largura */
   }
 }
